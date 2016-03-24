@@ -21,6 +21,13 @@ var LandingpageGenerator = yeoman.Base.extend({
     mkdirp.sync(this.appName + '/app/sections');
     mkdirp.sync(this.appName + '/app/css/sass');
     mkdirp.sync(this.appName + '/app/js');
+
+    this.copy = function( source, destination ) {
+      this.fs.copy(
+        this.templatePath(source),
+        this.destinationPath(this.appName + destination)
+      );
+    };
   },
   prompting: function() {
     var done = this.async();
@@ -44,30 +51,12 @@ var LandingpageGenerator = yeoman.Base.extend({
     }.bind(this));
   },
   writing: function() {
-    this.fs.copy(
-      this.templatePath('sass/**'),
-      this.destinationPath(this.appName + '/app/css/sass')
-    )
-    this.fs.copy(
-      this.templatePath('_footer.html'),
-      this.destinationPath(this.appName + '/app/footer.html')
-    );
-    this.fs.copy(
-      this.templatePath('_GruntFile.js'),
-      this.destinationPath(this.appName + '/GruntFile.js')
-    );
-    this.fs.copy(
-      this.templatePath('_package.json'),
-      this.destinationPath(this.appName + '/package.json')
-    );
-    this.fs.copy(
-      this.templatePath('_bower.json'),
-      this.destinationPath(this.appName + '/bower.json')
-    );
-    this.fs.copy(
-      this.templatePath('_.bowerrc'),
-      this.destinationPath(this.appName + '/.bowerrc')
-    );
+    this.copy('sass/**', '/app/css/sass');
+    this.copy('_footer.html', '/app/footer.html');
+    this.copy('_GruntFile.js', '/GruntFile.js');
+    this.copy('_package.json', '/package.json');
+    this.copy('_bower.json', '/bower.json');
+    this.copy('_.bowerrc', '/.bowerrc');
     this.fs.copyTpl(
       this.templatePath('_header.html'),
       this.destinationPath(this.appName + '/app/header.html'),
