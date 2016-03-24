@@ -1,7 +1,6 @@
 # Landing Page Generator
 
-
-> *generator-landing-page* is a *Modular* and *Fully Customizable* Yeoman Generator .
+#### generator-landing-page* is a *Modular* and *Fully Customizable* Yeoman Generator .
 
 ## Description
 *generator-landing-page* is a **_Modular_** and **_Fully Customizable_** Landing Page generator tool that uses the Power of [Yeoman](http://yeoman.io/) to reduce the amount of time you will put on Designing and Building your Landing pages.
