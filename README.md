@@ -39,7 +39,7 @@ $ grunt
 A full list of Sections, their information and How to customize your Landing Page documentations can be found in [Wiki](https://github.com/sadrzadehsina/generator-landing-page/wiki) .
 
 ## Contribution
-We'll Appreciate your help to this Project by Forking this Repository and adding your Modules or Stylesheets. You can even Help Imporoving Wiki. Then simply make a new Pull Request, Describe what you have done and Enjoy the Feeling of helping Others.
+We'll Appreciate your help to this Project by Forking this Repository and adding your Modules or Stylesheets. You can even Help Improving Wiki. Then simply make a new Pull Request, Describe what you have done and Enjoy the Feeling of helping Others.
 
 ## License
 > The MIT License (MIT)
