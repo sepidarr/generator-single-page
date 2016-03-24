@@ -1,0 +1,23 @@
+{
+  "name": "generator-landing-page",
+  "version": "0.1.0",
+  "description": "A fully customizable landing page",
+  "main": "index.js",
+  "files": [
+    "app",
+    "router",
+    "templates"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sina Sadrzadeh <sadrzadeh.sinaa@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.6.1",
+    "yeoman-generator": "^0.22.5"
+  }
+}
