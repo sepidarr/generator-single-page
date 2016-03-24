@@ -20,12 +20,12 @@ $ grunt
 And your Landing Page is Ready to use in the `Build` Folder.
 
 ## What Next?
-Next you might want to add other Modules to your project or Customize the Style of your Project.
+Next, you might want to add other Sections to your landing page.
 
-You can easily add any available module to your landing page by running:
+You can easily do that by running below command:
 
 ```sh
-$ yo landing-page:section <module>
+$ yo landing-page:section <section_name>
 $ grunt
 ```
 
@@ -36,7 +36,7 @@ $ yo landing-page:section about
 $ grunt
 ```
 
-A full list of Modules, their information and How to customize your Landing Page documentations can be found in [Wiki](https://github.com/sadrzadehsina/generator-landing-page/wiki) .
+A full list of Sections, their information and How to customize your Landing Page documentations can be found in [Wiki](https://github.com/sadrzadehsina/generator-landing-page/wiki) .
 
 ## Contribution
 We'll Appreciate your help to this Project by Forking this Repository and adding your Modules or Stylesheets. You can even Help Imporoving Wiki. Then simply make a new Pull Request, Describe what you have done and Enjoy the Feeling of helping Others.
