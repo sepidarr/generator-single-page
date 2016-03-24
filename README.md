@@ -1,10 +1,10 @@
-# generator-landing-page
-----
+# Landing Page Generator
+
 
 > *generator-landing-page* is a *Modular* and *Fully Customizable* Yeoman Generator .
 
 ## Description
-*generator-landing-page* is a ** *Modular* ** and ** *Fully Customizable* ** Landing Page generator tool that uses the Power of [Yeoman](http://yeoman.io/) to reduce the amount of time you will put on Designing and Building your Landing pages.
+*generator-landing-page* is a **_Modular_** and **_Fully Customizable_** Landing Page generator tool that uses the Power of [Yeoman](http://yeoman.io/) to reduce the amount of time you will put on Designing and Building your Landing pages.
 
 ## Getting Started
 Assuming you have [Yeoman](http://yeoman.io/), [Grunt](http://gruntjs.com/), [Bower](http://bower.io) and all other requirements installed, you just need to run the command below, If you don't, make sure you read the [Wiki](https://github.com/sadrzadehsina/generator-landing-page/wiki):
@@ -25,14 +25,30 @@ $ grunt
 And your Landing Page is Ready to use in the `Build` Folder.
 
 ## What Next?
-Next you might want to add other Modules to your project or Customize the Style of your Project. All Modules information, How to add them to your Landing page and How to customize your Landing Page documentations can be found in the [Wiki](https://github.com/sadrzadehsina/generator-landing-page/wiki) .
+Next you might want to add other Modules to your project or Customize the Style of your Project.
+
+You can easily add any available module to your landing page by running:
+
+```sh
+$ yo landing-page:section <module>
+$ grunt
+```
+
+i.e.
+
+```sh
+$ yo landing-page:section about
+$ grunt
+```
+
+A full list of Modules, their information and How to customize your Landing Page documentations can be found in [Wiki](https://github.com/sadrzadehsina/generator-landing-page/wiki) .
 
 ## Contribution
 We'll Appreciate your help to this Project by Forking this Repository and adding your Modules or Stylesheets. You can even Help Imporoving Wiki. Then simply make a new Pull Request, Describe what you have done and Enjoy the Feeling of helping Others.
 
 ## License
 > The MIT License (MIT)
-Copyright (c) 2016 Sina Sadrzadeh
+Copyright (c) 2016 Sina Sadrzadeh (@sadrzadehsina) & Masoud Mirzaei (@mamos98)
 
 > Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
