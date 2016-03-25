@@ -9,9 +9,9 @@ $ yo landing-page newLandingPage
 ```
 Answer questions, Wait until the command runs completely and you're good to go.
 
-This will make a new directory called ` newLandingPage ` for you, Copies all the files of project in it and automatically installs Dependencies for you.
+This will make a new directory called ` newLandingPage ` for you, Copies all the files of the project in it and automatically installs Dependencies for you.
 
-After generating project All you need to do is:
+After generating the project, All you need to do is:
 
 ```sh
 $ cd newLandingPage
@@ -39,7 +39,7 @@ $ grunt
 A full list of Sections, their information and How to customize your Landing Page documentations can be found in [Wiki](https://github.com/sadrzadehsina/generator-landing-page/wiki) .
 
 ## Contribution
-We'll Appreciate your help to this Project by Forking this Repository and adding your Modules or Stylesheets. You can even Help Improving Wiki. Then simply make a new Pull Request, Describe what you have done and Enjoy the Feeling of helping Others.
+We'll Appreciate your help to this Project by Forking this Repository and adding your Modules or Stylesheets. You can even help Improve Wiki. Then simply make a new Pull Request, Describe what you have done and Enjoy the Feeling of helping others.
 
 ## License
 > The MIT License (MIT)
