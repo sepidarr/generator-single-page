@@ -29,39 +29,6 @@ var LandingpageGenerator = yeoman.Base.extend({
       );
     };
   },
-  prompting: function() {
-    var done = this.async();
-
-    var addIntroPrompt = [{
-      type: 'confirm',
-      name: 'shouldAddIntroPrompt',
-      message: 'Do you need an Intro section?',
-      default: true
-    }];
-
-    var introPrompts = [{
-      name: 'title',
-      message: 'What is your landing page title?',
-      default: 'The Great Landing Page!'
-    }, {
-      name: 'slogan',
-      message: 'What is your slogan?',
-      default: 'My Great Landing Page with an Awesome Slogan!'
-    }];
-
-    this.prompt(addIntroPrompt, function( props ) {
-      this.shouldAddIntroPrompt = props.shouldAddIntroPrompt;
-      if (this.shouldAddIntroPrompt) {
-        this.prompt(introPrompts, function( props ) {
-          this.title = props.title;
-          this.slogan = props.slogan;
-          done();
-        }.bind(this));
-      } else {
-        done();
-      }
-    }.bind(this));
-  },
   writing: function() {
     this.copy('sass/**', '/app/css/sass');
     this.copy('_footer.html', '/app/footer.html');
@@ -80,7 +47,7 @@ var LandingpageGenerator = yeoman.Base.extend({
     this.installDependencies();
   },
   end: function() {
-    this.composeWith('landing-page:section', { args: ['intro'] })
+    console.log('LandingPageGenerator: All done!');
   }
 });
 
