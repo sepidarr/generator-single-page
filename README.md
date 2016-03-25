@@ -1,5 +1,6 @@
 # Landing Page Generator
-[![Code Climate](https://codeclimate.com/github/sadrzadehsina/generator-landing-page/badges/gpa.svg)](https://codeclimate.com/github/sadrzadehsina/generator-landing-page) 
+[![Code Climate](https://codeclimate.com/github/sadrzadehsina/generator-landing-page/badges/gpa.svg)](https://codeclimate.com/github/sadrzadehsina/generator-landing-page)
+
 *generator-landing-page* is a **_Modular_** and **_Fully Customizable_** Landing Page generator tool that uses the Power of [Yeoman](http://yeoman.io/) to reduce the amount of time you will put on Designing and Building your Landing pages.
 
 ## Getting Started
