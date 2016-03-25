@@ -14,8 +14,8 @@ var SectionGenerator = yeoman.Base.extend({
   },
   constructor: function() {
     yeoman.Base.apply(this, arguments);
-    this.argument('name', { type: String, required: true });
-    this.name = _.camelCase(this.name);
+    // this.argument('name', { type: String, required: true });
+    // this.name = _.camelCase(this.name);
   },
   prompting: function() {
     var done = this.async();
@@ -42,10 +42,10 @@ var SectionGenerator = yeoman.Base.extend({
   initialize: function() {
     this.destinationRoot('app');
     var context = {
-      id: _.lowerCase(this.name),
-      title: _.capitalize(this.name)
+      id: _.lowerCase(this.sectionType),
+      title: _.capitalize(this.sectionType)
     }
-    var fileBase = Date.now() + '_' + this.name;
+    var fileBase = Date.now() + '_' + this.sectionType;
     var htmlFile = 'sections/' + fileBase + '.html';
 
     this.template('_section.html', htmlFile, context);
