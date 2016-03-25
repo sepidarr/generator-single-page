@@ -8,7 +8,7 @@ var SectionGenerator = yeoman.Base.extend({
     'intro': ['Full', 'Standard', 'Minimal'],
     'contact': ['Form', 'Readonly'],
     'how_it_works': ['ImageText', 'Image', 'Text'],
-    'testimonies': ['3 rows 1 column', '3 rows 2 columns'],
+    'testimonies': ['1 row 3 columns', '2 rows 3 columns'],
     'team': ['Circular', 'Square'],
     'footer': ['1 row 1 column', '1 row 2 columns', '1 row 3 columns']
   },
