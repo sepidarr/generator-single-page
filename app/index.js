@@ -20,6 +20,7 @@ var LandingpageGenerator = yeoman.Base.extend({
     mkdirp.sync(this.appName + '/app/css');
     mkdirp.sync(this.appName + '/app/sections');
     mkdirp.sync(this.appName + '/app/css/sass');
+    mkdirp.sync(this.appName + '/app/css/sass/sections');
     mkdirp.sync(this.appName + '/app/js');
 
     this.copy = function( source, destination ) {
