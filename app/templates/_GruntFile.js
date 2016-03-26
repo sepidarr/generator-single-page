@@ -9,6 +9,12 @@ module.exports = function(grunt) {
         src: ['bower_components/bootstrap/dist/css/bootstrap.min.css'],
         dest: 'app/css/libs.css'
       },
+      sections_sass_files: {
+        src: [
+          'app/css/sass/sections/*.sass'
+        ],
+        dest: 'app/css/sass/sections.sass'
+      },
       scripts: {
         src: [
           'bower_components/jquery/dist/jquery.min.js',
@@ -25,13 +31,22 @@ module.exports = function(grunt) {
 				files: {
           'app/css/styles.css' : 'app/css/sass/styles.sass'
         }
-			}
+			},
+      sections: {
+        options: {
+					sourcemap: 'none'
+				},
+				files: {
+          'app/css/sections.css' : 'app/css/sass/sections.sass'
+        }
+      }
     },
     cssmin: {
       css: {
         files: {
           'build/css/libs.min.css': ['app/css/libs.css'],
-					'build/css/styles.min.css': ['app/css/styles.css']
+					'build/css/styles.min.css': ['app/css/styles.css'],
+          'build/css/sections.min.css': ['app/css/sections.css'],
 				}
       }
     },
