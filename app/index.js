@@ -47,7 +47,10 @@ var LandingpageGenerator = yeoman.Base.extend({
     this.installDependencies();
   },
   end: function() {
-    console.log('LandingPageGenerator: All done!');
+    console.log('----------------');
+    console.log('Almost done, just running an initial grunt command to build your just created landing page.')
+    console.log('----------------');
+    this.spawnCommand('grunt');
   }
 });
 
