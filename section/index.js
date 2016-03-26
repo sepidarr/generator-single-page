@@ -43,11 +43,19 @@ var SectionGenerator = yeoman.Base.extend({
       id: this.sectionType,
       title: this.sectionType + ':' + this.sectionLayout
     }
+
+    // TODO: need to review/refactor
     var fileBase = Date.now() + '_' + this.sectionType;
-    var htmlFile = 'sections/' + fileBase + '.html';
-    var templatePath = this.sectionType + '/' + this.sectionLayout + '.html';
+    var htmlFile = 'sections/' + fileBase + '_' + this.sectionLayout + '.html';
+    var sassFileDestiniation =  'css/sass/sections/' + this.sectionType + '_' + this.sectionLayout + '.sass';
+    var templatePath = this.sectionType + '/' + this.sectionLayout + '/' + 'layout.html';
+    var sassFileSource = this.sectionType + '/' + this.sectionLayout + '/' + 'layout.sass';
 
     this.template(templatePath, htmlFile, context);
+    this.fs.copy(
+      this.templatePath(sassFileSource),
+      this.destinationPath(sassFileDestiniation)
+    );
   },
   end: function() {
     console.log('SectionGenerator: All done!');
