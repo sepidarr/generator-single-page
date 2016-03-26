@@ -1,29 +1,29 @@
-# Landing Page Generator
+# Single Page Generator
 <!-- TODO: Remember to change codeclimate badge url -->
 [![Code Climate](https://codeclimate.com/github/sadrzadehsina/generator-landing-page/badges/gpa.svg)](https://codeclimate.com/github/sadrzadehsina/generator-landing-page)
 
-*generator-single-page* is a **_Modular_** and **_Fully Customizable_** Single Page Generator tool that uses the Power of [Yeoman](http://yeoman.io/) to reduce the amount of time you will put on Designing and Building your Landing pages.
+*generator-single-page* is a **_Modular_** and **_Fully Customizable_** Single Page Generator tool that uses the Power of [Yeoman](http://yeoman.io/) to reduce the amount of time you will put on Designing and Building your single web pages.
 
 ## Getting Started
 Assuming you have [Yeoman](http://yeoman.io/), [Grunt](http://gruntjs.com/), [Bower](http://bower.io) and all other requirements installed, you just need to run the command below, If you don't, make sure you read the [Wiki](wiki):
 
 ```sh
-$ yo single-page newLandingPage
+$ yo single-page newSinglePage
 ```
 Answer questions, Wait until the commands runs completely and you're good to go.
 
-This will make a new directory called ` newLandingPage ` for you, Copies all the files of the project in it and automatically installs Dependencies for you.
+This will make a new directory called ` newSinglePage ` for you, Copies all the files of the project in it and automatically installs Dependencies for you.
 
 After generating the project, All you need to do is:
 
 ```sh
-$ cd newLandingPage
+$ cd newSinglePage
 $ grunt
 ```
-And your Landing Page is Ready to use in the `Build` Folder.
+And your Single Page is Ready to use in the `Build` Folder.
 
 ## What Next?
-Next, you might want to add other Sections to your landing page.
+Next, you might want to add other Sections to your single page.
 
 You can easily do that by running below command:
 
@@ -34,7 +34,7 @@ $ grunt
 
 Simply choose any Section you want to add choose the layout and proceed.
 
-A full list of Sections, their information and How to customize your Landing Page documentations can be found in [Wiki](wiki) .
+A full list of Sections, their information and How to customize your Page documentations can be found in [Wiki](wiki) .
 
 ## Contribution
 We'll Appreciate your help to this Project by Forking this Repository and adding your Modules or Stylesheets. You can even help Improve Wiki. Then simply make a new Pull Request, Describe what you've done and Enjoy the Feeling of helping others.
