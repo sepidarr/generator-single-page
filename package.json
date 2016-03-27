@@ -1,7 +1,7 @@
 {
-  "name": "generator-landing-page",
+  "name": "generator-single-page",
   "version": "0.1.0",
-  "description": "A fully customizable landing page",
+  "description": "A fully customizable single/landing page",
   "main": "index.js",
   "files": [
     "app",
@@ -14,7 +14,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Sina Sadrzadeh <sadrzadeh.sinaa@gmail.com>",
+  "author": "Sugar Coders <us@sugarcoders.net>",
   "license": "MIT",
   "dependencies": {
     "lodash": "^4.6.1",
