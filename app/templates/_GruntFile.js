@@ -56,7 +56,16 @@ module.exports = function(grunt) {
           'build/js/libs.min.js': ['app/js/libs.js']
         }
       }
-    }
+    },
+  	connect:{
+  		server: {
+  			options:{
+  				port: 9000,
+  				base: 'build',
+          keepalive: true
+  			}
+  		}
+  	}
   });
 
   grunt.loadNpmTasks('grunt-contrib-connect');
