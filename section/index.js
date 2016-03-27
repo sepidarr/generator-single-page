@@ -2,18 +2,30 @@
 var util = require('util');
 var yeoman = require('yeoman-generator');
 var _ = require('lodash');
+var fs = require('fs');
+var path = require('path');
 
 var SectionGenerator = yeoman.Base.extend({
-  _sectionLayouts: {
-    'intro': ['Full', 'Standard', 'Minimal'],
-    'contact': ['Form', 'Readonly'],
-    'how_it_works': ['ImageText', 'Image', 'Text'],
-    'testimonies': ['1 row 3 columns', '2 rows 3 columns'],
-    'team': ['Circular', 'Square'],
-    'footer': ['1 row 1 column', '1 row 2 columns', '1 row 3 columns']
+  _sectionTypes: [],
+  _sectionLayouts: {},
+  _getAllFolders: function( srcpath ) {
+    return fs.readdirSync(srcpath).filter(function( file ) {
+      return fs.statSync(path.join(srcpath, file)).isDirectory();
+    });
   },
   constructor: function() {
     yeoman.Base.apply(this, arguments);
+
+    // TODO: need to review/refactor
+    this._getAllFolders(__dirname + '/templates')
+    .forEach(function( section ) {
+      this._sectionLayouts[section] = [];
+      this._sectionTypes.push(_.capitalize(section));
+      this._getAllFolders(__dirname + '/templates/' + section)
+      .forEach(function( sectionLayout ) {
+        this._sectionLayouts[section].push(sectionLayout);
+      }.bind(this));
+    }.bind(this));
   },
   prompting: function() {
     var done = this.async();
@@ -21,7 +33,7 @@ var SectionGenerator = yeoman.Base.extend({
       name: 'sectionType',
       type: 'list',
       message: 'What section do you need?',
-      choices: ['Intro', 'Contact', 'How It Works', 'Testimonies', 'Team', 'Footer']
+      choices: this._sectionTypes
     }];
     this.prompt(sectionTypePrompts, function( props ) {
       this.sectionType = _.snakeCase(props.sectionType);
