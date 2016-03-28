@@ -36,6 +36,16 @@ Simply choose any Section you want to add choose the layout and proceed.
 
 A full list of Sections, their information and How to customize your Page documentations can be found in [Wiki](wiki) .
 
+## Layouts
+We have prepared a few essential layouts to start your single page application.
+
+* [Intro](https://github.com/sugarcoders/generator-single-page-intro)
+* [Contact](https://github.com/sugarcoders/generator-single-page-contact)
+* [How It Works](https://github.com/sugarcoders/generator-single-page-howitworks)
+* [Team](https://github.com/sugarcoders/generator-single-page-team)
+* [Testimonies](https://github.com/sugarcoders/generator-single-page-testimonies)
+* [Footer](https://github.com/sugarcoders/generator-single-page-footer)
+
 ## Contribution
 We'll Appreciate your help to this Project by Forking this Repository and adding your Modules or Stylesheets. You can even help Improve Wiki. Then simply make a new Pull Request, Describe what you've done and Enjoy the Feeling of helping others.
 
