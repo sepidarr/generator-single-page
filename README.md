@@ -1,6 +1,4 @@
 # Single Page Generator
-<!-- TODO: Remember to change codeclimate badge url -->
-[![Code Climate](https://codeclimate.com/github/sadrzadehsina/generator-landing-page/badges/gpa.svg)](https://codeclimate.com/github/sadrzadehsina/generator-landing-page)
 
 *generator-single-page* is a **_Modular_** and **_Fully Customizable_** Single Page Generator tool that uses the Power of [Yeoman](http://yeoman.io/) to reduce the amount of time you will put on Designing and Building your single web pages.
 
