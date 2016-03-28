@@ -1,17 +1,47 @@
 <div id="<%= id %>" name="<%= id %>"
-  class="section section-<%= id %>">
+  class="section section-<%= id %> full">
 
-  <!-- Logo -->
-  <div class="logo">Logo</div>
-
-  <!-- Navigation -->
-  <nav class="main-navigation">Main Navigation</nav>
+  <!-- Logo + Menu -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed"
+        data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Company Logo</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">About <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">How It Works</a></li>
+          <li><a href="#">Team</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- Title + Slogan -->
-  <h2 class="title">Title</h2>
-  <h4 class="slogan">Slogan</h4>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8">
+        <div class="text-center">
+          <h2 class="title">The Great Landing Page</h2>
+          <h4 class="slogan">Your Slogan May Come Here!</h4>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Read More Button  -->
-  <div class="read-more">Read More Button</div>
+  <div class="read-more">
+    <div class="text-center">
+      <button type="button" class="btn btn-danger">Read More</button>
+    </div>
+  </div>
 
 </div>
