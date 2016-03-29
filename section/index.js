@@ -1,9 +1,14 @@
 'use strict';
-var util = require('util');
-var yeoman = require('yeoman-generator');
-var _ = require('lodash');
-var fs = require('fs');
-var path = require('path');
+
+// -----------------------------------------------------------------------------
+// Import required modules
+// -----------------------------------------------------------------------------
+var yeoman  = require('yeoman-generator'),
+    path    = require('path'),
+    fs      = require('fs'),
+    _       = require('lodash');
+// -----------------------------------------------------------------------------
+
 
 var SectionGenerator = yeoman.Base.extend({
   _sectionTypes: [],
@@ -17,7 +22,9 @@ var SectionGenerator = yeoman.Base.extend({
     yeoman.Base.apply(this, arguments);
 
     // TODO: need to review/refactor
-    this._getAllFolders(__dirname + '/templates')
+    var templatesPath = this.templatePath();
+    // console.log(templatesPath);
+    this._getAllFolders(templatesPath)
     .forEach(function( section ) {
       this._sectionLayouts[section] = [];
       this._sectionTypes.push(_.capitalize(section));
