@@ -15,7 +15,8 @@ var SectionGenerator = yeoman.Base.extend({
   _sectionLayouts: {},
   _getAllFolders: function( srcpath ) {
     return fs.readdirSync(srcpath).filter(function( file ) {
-      return fs.statSync(path.join(srcpath, file)).isDirectory();
+      return fs.statSync(path.join(srcpath, file)).isDirectory() &&
+      !(/(^|\/)\.[^\/\.]/g).test(path.join(srcpath, file));
     });
   },
   constructor: function() {
@@ -23,12 +24,11 @@ var SectionGenerator = yeoman.Base.extend({
 
     // TODO: need to review/refactor
     var templatesPath = this.templatePath();
-    // console.log(templatesPath);
     this._getAllFolders(templatesPath)
     .forEach(function( section ) {
       this._sectionLayouts[section] = [];
       this._sectionTypes.push(_.capitalize(section));
-      this._getAllFolders(__dirname + '/templates/' + section)
+      this._getAllFolders(templatesPath + '/' + section)
       .forEach(function( sectionLayout ) {
         this._sectionLayouts[section].push(sectionLayout);
       }.bind(this));
