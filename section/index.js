@@ -9,46 +9,42 @@ var yeoman  = require('yeoman-generator'),
     _       = require('lodash');
 // -----------------------------------------------------------------------------
 
-
 var SectionGenerator = yeoman.Base.extend({
-  _sectionTypes: [],
-  _sectionLayouts: {},
-  _getAllFolders: function( srcpath ) {
-    return fs.readdirSync(srcpath).filter(function( file ) {
-      return fs.statSync(path.join(srcpath, file)).isDirectory() &&
-      !(/(^|\/)\.[^\/\.]/g).test(path.join(srcpath, file));
+  _sections: {},
+  _getAllFolders: function( basePath ) {
+    return fs.readdirSync(basePath).filter(function( file ) {
+      var filePath = path.join(basePath, file);
+      return fs.statSync(filePath).isDirectory() &&
+      !(/(^|\/)\.[^\/\.]/g).test(filePath);
     });
   },
   constructor: function() {
     yeoman.Base.apply(this, arguments);
 
-    // TODO: need to review/refactor
-    var templatesPath = this.templatePath();
-    this._getAllFolders(templatesPath)
-    .forEach(function( section ) {
-      this._sectionLayouts[section] = [];
-      this._sectionTypes.push(_.capitalize(section));
-      this._getAllFolders(templatesPath + '/' + section)
-      .forEach(function( sectionLayout ) {
-        this._sectionLayouts[section].push(sectionLayout);
+    var sectionNamesArray = this._getAllFolders(this.templatePath());
+    _(sectionNamesArray).forEach(function( section ) {
+      this._sections[section] = [];
+      var sectionLayoutsArray = this._getAllFolders(this.templatePath() + '/' + section);
+      _(sectionLayoutsArray).forEach(function( layout ) {
+        this._sections[section].push(layout);
       }.bind(this));
     }.bind(this));
   },
   prompting: function() {
     var done = this.async();
     var sectionTypePrompts = [{
-      name: 'sectionType',
+      name: 'sectionName',
       type: 'list',
       message: 'What section do you need?',
-      choices: this._sectionTypes
+      choices: _.keys(this._sections)
     }];
     this.prompt(sectionTypePrompts, function( props ) {
-      this.sectionType = _.snakeCase(props.sectionType);
+      this.sectionName = _.snakeCase(props.sectionName);
       var layoutPropmt = {
         name: 'sectionLayout',
         type: 'list',
         message: 'Select your section layout.',
-        choices: this._sectionLayouts[this.sectionType]
+        choices: this._sections[this.sectionName]
       }
       this.prompt(layoutPropmt, function( props ) {
         this.sectionLayout = _.snakeCase(props.sectionLayout);
@@ -59,20 +55,21 @@ var SectionGenerator = yeoman.Base.extend({
   initialize: function() {
     this.destinationRoot('app');
     var context = {
-      id: this.sectionType,
-      title: this.sectionType + ':' + this.sectionLayout
+      id: this.sectionName
     }
 
-    // TODO: need to review/refactor
-    var fileBase = Date.now() + '_' + this.sectionType;
-    var htmlFile = 'sections/' + fileBase + '_' + this.sectionLayout + '.html';
-    var sassFileDestiniation =  'css/sass/sections/' + this.sectionType + '_' + this.sectionLayout + '.sass';
-    var templatePath = this.sectionType + '/' + this.sectionLayout + '/' + 'layout.html';
-    var sassFileSource = this.sectionType + '/' + this.sectionLayout + '/' + 'layout.sass';
+    var sectionBasePath = this.sectionName + '/' + this.sectionLayout + '/';
 
-    this.template(templatePath, htmlFile, context);
+    // TODO: need to review/refactor
+    var fileBase = Date.now() + '_' + this.sectionName;
+    var htmlFile = 'sections/' + fileBase + '_' + this.sectionLayout + '.html';
+    var sassFileDestiniation =  'css/sass/sections/' + this.sectionName + '_' + this.sectionLayout + '.sass';
+    var layoutHtmlPath = sectionBasePath + 'layout.html';
+    var layoutSassPath = sectionBasePath + 'layout.sass';
+
+    this.template(layoutHtmlPath, htmlFile, context);
     this.fs.copy(
-      this.templatePath(sassFileSource),
+      this.templatePath(layoutSassPath),
       this.destinationPath(sassFileDestiniation)
     );
   },
