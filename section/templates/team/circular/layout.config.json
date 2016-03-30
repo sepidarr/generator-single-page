@@ -1,5 +1,6 @@
 {
-  "prompts": [
+  "prompts":
+  [
     {
       "type": "input",
       "name": "first",
