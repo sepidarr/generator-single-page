@@ -48,6 +48,17 @@ var SectionGenerator = yeoman.Base.extend({
       }
       this.prompt(layoutPropmt, function( props ) {
         this.sectionLayout = _.snakeCase(props.sectionLayout);
+        var layoutConfigFile =
+        this.templatePath(this.sectionName + '/' + this.sectionLayout +
+        '/' + 'layout.config.json');
+        var config = JSON.parse(fs.readFileSync(layoutConfigFile, 'utf8'));
+        this[this.sectionName] = {};
+        if (!_.isEmpty(config)){
+          this.prompt(config.prompts, function( props ) {
+            this[this.sectionName] = props;
+            done();
+          }.bind(this));
+        }
         done();
       }.bind(this));
     }.bind(this));
@@ -57,6 +68,7 @@ var SectionGenerator = yeoman.Base.extend({
     var context = {
       id: this.sectionName
     }
+    _.merge(context, this[this.sectionName]);
 
     var sectionBasePath = this.sectionName + '/' + this.sectionLayout + '/';
 
