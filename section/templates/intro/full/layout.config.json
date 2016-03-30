@@ -2,6 +2,11 @@
   "prompts": [
     {
       "type": "input",
+      "name": "company",
+      "message": "Give me your Company Logo Placeholder Name."
+    },
+    {
+      "type": "input",
       "name": "title",
       "message": "What is your title?"
     },

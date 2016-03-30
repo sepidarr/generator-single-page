@@ -6,15 +6,15 @@
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed"
-        data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        data-toggle="collapse" data-target="#menu" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Company Logo</a>
+        <a class="navbar-brand" href="#"><%= company %></a>
       </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="collapse navbar-collapse" id="menu">
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="#">About <span class="sr-only">(current)</span></a></li>
           <li><a href="#">Contact</a></li>
@@ -30,8 +30,8 @@
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8">
         <div class="text-center">
-          <h2 class="title">The Great Landing Page</h2>
-          <h4 class="slogan">Your Slogan May Come Here!</h4>
+          <h2 class="title"><%= title %></h2>
+          <h4 class="slogan"><%= slogan %></h4>
         </div>
       </div>
     </div>

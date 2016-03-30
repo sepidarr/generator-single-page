@@ -1,1 +1,30 @@
-{}
+{
+  "prompt":
+  [
+    {
+      "type": "input",
+      "name": "year",
+      "message": "What Year do you want to use?"
+    },
+    {
+      "type": "input",
+      "name": "company",
+      "message": "What is your Company or your Name?"
+    },
+    {
+      "type": "input",
+      "name": "facebook",
+      "message": "Give Me Your Facebook Username."
+    },
+    {
+      "type": "input",
+      "name": "github",
+      "message": "Give Me Your Github Username."
+    },
+    {
+      "type": "input",
+      "name": "twitter",
+      "message": "Give Me Your Twitter Username."
+    }
+  ]
+}

@@ -1,1 +1,19 @@
-{}
+{
+  "prompts": [
+    {
+      "type": "input",
+      "name": "address",
+      "message": "What is your Address?"
+    },
+    {
+      "type": "input",
+      "name": "phone",
+      "message": "What is your Phone Number?"
+    },
+    {
+      "type": "input",
+      "name": "email",
+      "message": "And your Email?"
+    }
+  ]
+}
