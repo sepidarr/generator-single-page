@@ -1,6 +1,6 @@
 {
   "name": "generator-single-page",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A fully customizable single/landing page",
   "main": "index.js",
   "files": [
