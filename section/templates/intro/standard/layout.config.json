@@ -1,0 +1,14 @@
+{
+  "prompts": [
+    {
+      "type": "input",
+      "name": "title",
+      "message": "What is your title?"
+    },
+    {
+      "type": "input",
+      "name": "slogan",
+      "message": "And your slogan?"
+    }
+  ]
+}
