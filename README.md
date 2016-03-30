@@ -1,6 +1,6 @@
 # Single Page Generator
 
-[![NPM](https://nodei.co/npm/generator-single-page.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/generator-single-page/)
+[cooment]: # ([![NPM](https://nodei.co/npm/generator-single-page.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/generator-single-page/))
 
 *generator-single-page* is a **_Modular_** and **_Fully Customizable_** Single Page Generator tool that uses the Power of [Yeoman](http://yeoman.io/) to reduce the amount of time you will put on Designing and Building your single web pages.
 
