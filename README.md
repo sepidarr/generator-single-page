@@ -31,7 +31,7 @@ And your slogan? "We are going to make it happen!"
 ```
 Each section has its own config file, available with `section/templates/<section_name>/laytous.configs.json`.
 
-A full list of Sections, their information and How to customize your Page documentations can be found in [Wiki](wiki).
+A full list of Sections, their information and How to customize your Page documentations can be found in [Wiki](http://github.com/sugarcoders/generator-single-page/wiki).
 
 ## Layouts
 We have prepared a few essential layouts to start your single page application.
