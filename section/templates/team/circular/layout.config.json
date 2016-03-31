@@ -28,7 +28,7 @@
     },
     {
       "type": "input",
-      "name": "firstuser",
+      "name": "thirduser",
       "message": "Give me your Third User Username."
     }
   ]
