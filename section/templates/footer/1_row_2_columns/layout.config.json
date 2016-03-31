@@ -4,12 +4,12 @@
     {
       "type": "input",
       "name": "year",
-      "message": "What Year do you want to use?"
+      "message": "What Year do you want to use as your copyright?"
     },
     {
       "type": "input",
       "name": "company",
-      "message": "What is your Company or your Name?"
+      "message": "What is your Company Name?"
     }
   ]
 }

@@ -4,27 +4,27 @@
     {
       "type": "input",
       "name": "year",
-      "message": "What Year do you want to use?"
+      "message": "What Year do you want to use as your copyright?"
     },
     {
       "type": "input",
       "name": "company",
-      "message": "What is your Company or your Name?"
+      "message": "What is your Company Name?"
     },
     {
       "type": "input",
       "name": "facebook",
-      "message": "Give Me Your Facebook Username."
+      "message": "What is your Facebook username?"
     },
     {
       "type": "input",
       "name": "github",
-      "message": "Give Me Your Github Username."
+      "message": "What is your Github username?"
     },
     {
       "type": "input",
       "name": "twitter",
-      "message": "Give Me Your Twitter Username."
+      "message": "And your Twitter username?"
     }
   ]
 }

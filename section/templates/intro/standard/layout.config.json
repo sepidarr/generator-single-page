@@ -3,7 +3,7 @@
     {
       "type": "input",
       "name": "company",
-      "message": "Give me your Company Logo Placeholder Name."
+      "message": "What is your Company Name?"
     },
     {
       "type": "input",
