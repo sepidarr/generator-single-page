@@ -31,7 +31,7 @@ And your slogan? "We are going to make it happen!"
 ```
 Each section has its own config file, available with `section/templates/<section_name>/laytous.configs.json`.
 
-A full list of Sections, their information and How to customize your Page documentations can be found in [Wiki](wiki).
+A full list of Sections, their information and How to customize your Page documentations can be found in [Wiki](http://github.com/sugarcoders/generator-single-page/wiki).
 
 ## Layouts
 We have prepared a few essential layouts to start your single page application.
@@ -42,6 +42,10 @@ We have prepared a few essential layouts to start your single page application.
 * [Team](https://github.com/sugarcoders/generator-single-page-team)
 * [Testimonies](https://github.com/sugarcoders/generator-single-page-testimonies)
 * [Footer](https://github.com/sugarcoders/generator-single-page-footer)
+
+## Video
+[![generator-single-page](http://img.youtube.com/vi/kHFBJHHDw3I/maxresdefault.jpg)](http://www.youtube.com/watch?v=kHFBJHHDw3I)
+
 
 ## Contribution
 We'll Appreciate your help to this Project by Forking this Repository and adding your Modules or Stylesheets. You can even help Improve Wiki. Then simply make a new Pull Request, Describe what you've done and Enjoy the Feeling of helping others.
