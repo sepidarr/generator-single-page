@@ -43,6 +43,10 @@ We have prepared a few essential layouts to start your single page application.
 * [Testimonies](https://github.com/sugarcoders/generator-single-page-testimonies)
 * [Footer](https://github.com/sugarcoders/generator-single-page-footer)
 
+## Video
+[![generator-single-page](http://img.youtube.com/vi/kHFBJHHDw3I/maxresdefault.jpg)](http://www.youtube.com/watch?v=kHFBJHHDw3I)
+
+
 ## Contribution
 We'll Appreciate your help to this Project by Forking this Repository and adding your Modules or Stylesheets. You can even help Improve Wiki. Then simply make a new Pull Request, Describe what you've done and Enjoy the Feeling of helping others.
 
