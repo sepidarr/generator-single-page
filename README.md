@@ -43,7 +43,7 @@ We have prepared a few essential layouts to start your single page application.
 * [Testimonies](https://github.com/sugarcoders/generator-single-page-testimonies)
 * [Footer](https://github.com/sugarcoders/generator-single-page-footer)
 
-## Video
+## How It Works
 [![generator-single-page](http://img.youtube.com/vi/kHFBJHHDw3I/maxresdefault.jpg)](http://www.youtube.com/watch?v=kHFBJHHDw3I)
 
 
