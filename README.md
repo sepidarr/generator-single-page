@@ -1,5 +1,19 @@
 # Single Page Generator
 
+
+## Hi guys, this repo is not under active development anymore. We have a few other projects we should take care of. If you are interested in managing it let us know by contacting admin@neacod.in :)
+
+## P.S. There are six other repositories listed below related to this one that will move to your account by accepting to manage it
+
+* [Team Layout](https://github.com/neacodin/generator-single-page-team)
+* [How It Works Layout](https://github.com/neacodin/generator-single-page-howitworks)
+* [Testimonies Layout](https://github.com/neacodin/generator-single-page-testimonies)
+* [Intro Layout](https://github.com/neacodin/generator-single-page-intro)
+* [Footer Layout](https://github.com/neacodin/generator-single-page-footer)
+* [Contact Layout](https://github.com/neacodin/generator-single-page-contact)
+
+--------------
+
 *generator-single-page* is a **_Modular_** and **_Fully Customizable_** Single Page Generator tool that uses the Power of [Yeoman](http://yeoman.io/) to reduce the amount of time you will put on Designing and Building your single web pages.
 
 ## Getting Started
