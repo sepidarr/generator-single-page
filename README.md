@@ -1,16 +1,16 @@
 # Single Page Generator
 
 
-## Hi guys, this repo is not under active development anymore. We have a few other projects we should take care of. If you are interested in managing it let us know by contacting admin@neacod.in :)
+## Hi guys, this repo is not under active development anymore. We have a few other projects we should take care of. If you are interested in managing it let us know by contacting info@sepidarr.ir :)
 
 ## P.S. There are six other repositories listed below related to this one that will move to your account by accepting to manage it
 
-* [Team Layout](https://github.com/neacodin/generator-single-page-team)
-* [How It Works Layout](https://github.com/neacodin/generator-single-page-howitworks)
-* [Testimonies Layout](https://github.com/neacodin/generator-single-page-testimonies)
-* [Intro Layout](https://github.com/neacodin/generator-single-page-intro)
-* [Footer Layout](https://github.com/neacodin/generator-single-page-footer)
-* [Contact Layout](https://github.com/neacodin/generator-single-page-contact)
+* [Team Layout](https://github.com/sepidarr/generator-single-page-team)
+* [How It Works Layout](https://github.com/sepidarr/generator-single-page-howitworks)
+* [Testimonies Layout](https://github.com/sepidarr/generator-single-page-testimonies)
+* [Intro Layout](https://github.com/sepidarr/generator-single-page-intro)
+* [Footer Layout](https://github.com/sepidarr/generator-single-page-footer)
+* [Contact Layout](https://github.com/sepidarr/generator-single-page-contact)
 
 --------------
 
@@ -50,12 +50,12 @@ A full list of Sections, their information and How to customize your Page docume
 ## Layouts
 We have prepared a few essential layouts to start your single page application.
 
-* [Intro](https://github.com/sugarcoders/generator-single-page-intro)
-* [Contact](https://github.com/sugarcoders/generator-single-page-contact)
-* [How It Works](https://github.com/sugarcoders/generator-single-page-howitworks)
-* [Team](https://github.com/sugarcoders/generator-single-page-team)
-* [Testimonies](https://github.com/sugarcoders/generator-single-page-testimonies)
-* [Footer](https://github.com/sugarcoders/generator-single-page-footer)
+* [Intro](https://github.com/sepidarr/generator-single-page-intro)
+* [Contact](https://github.com/sepidarr/generator-single-page-contact)
+* [How It Works](https://github.com/sepidarr/generator-single-page-howitworks)
+* [Team](https://github.com/sepidarr/generator-single-page-team)
+* [Testimonies](https://github.com/sepidarr/generator-single-page-testimonies)
+* [Footer](https://github.com/sepidarr/generator-single-page-footer)
 
 ## How It Works
 [![generator-single-page](http://img.youtube.com/vi/kHFBJHHDw3I/maxresdefault.jpg)](http://www.youtube.com/watch?v=kHFBJHHDw3I)
@@ -66,7 +66,7 @@ We'll Appreciate your help to this Project by Forking this Repository and adding
 
 ## License
 > The MIT License (MIT)
-Copyright (c) 2016 Sugar Coders (@sugarcoders)
+Copyright (c) 2016 Sepidar Sepehr System Sepahan (@sepidarr)
 
 > Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
